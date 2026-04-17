@@ -1,7 +1,11 @@
+import { ProductStoreContext, useProductStore } from './stores/productStore.ts';
+
 export const App = () => {
-  return (
-    <>
-      <div>Hello world</div>
-    </>
-  );
+    const productStore = useProductStore();
+
+    return (
+        <ProductStoreContext.Provider value={productStore}>
+            <div>Hello world</div>
+        </ProductStoreContext.Provider>
+    );
 };
