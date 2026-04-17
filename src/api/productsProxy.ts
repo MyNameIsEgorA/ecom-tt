@@ -24,27 +24,13 @@ export class ProductsProxy {
             return this.getProducts(params);
         }
 
-        const value = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const [byTitle, byDescription] = await Promise.all([
-            this.fetchProducts(new URLSearchParams({ title_like: value })),
-            this.fetchProducts(
-                new URLSearchParams({ description_like: value }),
-            ),
-        ]);
-        const products = new Map<Product['id'], Product>();
-
-        [...byTitle.items, ...byDescription.items].forEach((product) => {
-            products.set(product.id, product);
-        });
-
-        const items = [...products.values()].sort(
-            (first, second) => first.id - second.id,
+        return this.fetchProducts(
+            new URLSearchParams({
+                q: query,
+                _start: String(params.offset),
+                _limit: String(params.limit),
+            }),
         );
-
-        return {
-            items: items.slice(params.offset, params.offset + params.limit),
-            total: items.length,
-        };
     }
 
     private async fetchProducts(

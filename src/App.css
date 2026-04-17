@@ -1,0 +1,9 @@
+.app {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.app .input-container {
+    margin-bottom: 24px;
+}
