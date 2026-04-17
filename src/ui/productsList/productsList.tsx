@@ -68,15 +68,25 @@ export const ProductsList: FC = observer(() => {
     return (
         <section className="products-list" aria-label="Список товаров">
             <div className="products-list__grid">
-                {productStore.products.map((product) => (
-                    <ProductCard
-                        key={product.id}
-                        product={product}
-                        onClick={() =>
-                            productStore.openProductModal(product.id)
-                        }
-                    />
-                ))}
+                {productStore.products.map((product, index) => {
+                    const shouldLoadImmediately = index < 3;
+
+                    return (
+                        <ProductCard
+                            key={product.id}
+                            product={product}
+                            imageFetchPriority={
+                                shouldLoadImmediately ? 'high' : 'low'
+                            }
+                            imageLoading={
+                                shouldLoadImmediately ? 'eager' : 'lazy'
+                            }
+                            onClick={() =>
+                                productStore.openProductModal(product.id)
+                            }
+                        />
+                    );
+                })}
             </div>
             <div className="products-list__loader" ref={loaderRef}>
                 {productStore.isLoading && 'Загружаем еще...'}

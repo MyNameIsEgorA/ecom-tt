@@ -14,9 +14,14 @@
     outline-offset: 3px;
 }
 
+.product-card__image-wrap {
+    background: #f1f5f9;
+}
+
 .product-card__image {
     height: 250px;
     width: 100%;
+    object-fit: cover;
 }
 
 .product-card__content {

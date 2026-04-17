@@ -5,10 +5,14 @@ import './styles.css';
 
 interface ProductCardProps extends ComponentPropsWithoutRef<'article'> {
     product: Product;
+    imageFetchPriority?: ComponentPropsWithoutRef<'img'>['fetchPriority'];
+    imageLoading?: ComponentPropsWithoutRef<'img'>['loading'];
 }
 
 export const ProductCard: FC<ProductCardProps> = ({
     product,
+    imageFetchPriority = 'auto',
+    imageLoading = 'lazy',
     className,
     onKeyDown,
     role = 'button',
@@ -47,6 +51,11 @@ export const ProductCard: FC<ProductCardProps> = ({
                     className="product-card__image"
                     src={product.image}
                     alt={product.title}
+                    width={800}
+                    height={800}
+                    loading={imageLoading}
+                    decoding="async"
+                    fetchPriority={imageFetchPriority}
                 />
             </div>
             <div className="product-card__content">
