@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Смарт-часы X100",
+      "price": 7490,
+      "category": "Гаджеты",
+      "image": "https://loremflickr.com/800/800/smartwatch,gadget?lock=1001",
+      "description": "Водонепроницаемые, GPS, 7-дневный аккумулятор"
+    },
+    {
+      "id": 2,
+      "title": "Беспроводные наушники AirBeat Pro",
+      "price": 5990,
+      "category": "Аудио",
+      "image": "https://loremflickr.com/800/800/wireless,earbuds,headphones?lock=1002",
+      "description": "Активное шумоподавление, до 30 часов работы с кейсом"
+    },
+    {
+      "id": 3,
+      "title": "Портативная колонка Boom Mini",
+      "price": 4290,
+      "category": "Аудио",
+      "image": "https://loremflickr.com/800/800/bluetooth,speaker,audio?lock=1003",
+      "description": "Мощный звук 20 Вт, защита IPX7, Bluetooth 5.3"
+    },
+    {
+      "id": 4,
+      "title": "Электрочайник HeatPro 1.7",
+      "price": 2690,
+      "category": "Бытовая техника",
+      "image": "https://loremflickr.com/800/800/electric,kettle,kitchen?lock=1004",
+      "description": "Стальной корпус, автоотключение, фильтр от накипи"
+    },
+    {
+      "id": 5,
+      "title": "Робот-пылесос CleanBot S5",
+      "price": 15990,
+      "category": "Дом",
+      "image": "https://loremflickr.com/800/800/robot,vacuum,cleaner?lock=1005",
+      "description": "Лидар-навигация, влажная уборка, управление через приложение"
+    },
+    {
+      "id": 6,
+      "title": "Игровая мышь Falcon RGB",
+      "price": 3290,
+      "category": "Компьютеры",
+      "image": "https://loremflickr.com/800/800/gaming,mouse,computer?lock=1006",
+      "description": "Оптический сенсор 16000 DPI, 7 программируемых кнопок"
+    },
+    {
+      "id": 7,
+      "title": "Механическая клавиатура K87",
+      "price": 6890,
+      "category": "Компьютеры",
+      "image": "https://loremflickr.com/800/800/mechanical,keyboard,gaming?lock=1007",
+      "description": "Hot-swap свитчи, белая подсветка, формат TKL"
+    },
+    {
+      "id": 8,
+      "title": "Монитор Vision 27 QHD",
+      "price": 21990,
+      "category": "Компьютеры",
+      "image": "https://loremflickr.com/800/800/computer,monitor,display?lock=1008",
+      "description": "27 дюймов, IPS-матрица, 165 Гц, FreeSync"
+    },
+    {
+      "id": 9,
+      "title": "Повербанк PowerMax 20000",
+      "price": 3490,
+      "category": "Гаджеты",
+      "image": "https://loremflickr.com/800/800/powerbank,battery,charger?lock=1009",
+      "description": "Быстрая зарядка 22.5 Вт, USB-C, индикация уровня заряда"
+    },
+    {
+      "id": 10,
+      "title": "Смартфон Nova S12 256 ГБ",
+      "price": 42990,
+      "category": "Смартфоны",
+      "image": "https://loremflickr.com/800/800/smartphone,mobile,phone?lock=1010",
+      "description": "AMOLED 120 Гц, тройная камера 50 МП, NFC"
+    },
+    {
+      "id": 11,
+      "title": "Экшн-камера Motion 4K",
+      "price": 12990,
+      "category": "Фото и видео",
+      "image": "https://loremflickr.com/800/800/action,camera,video?lock=1011",
+      "description": "Съёмка 4K/60fps, электронная стабилизация, Wi-Fi"
+    },
+    {
+      "id": 12,
+      "title": "Фитнес-браслет FitTrack Lite",
+      "price": 2890,
+      "category": "Гаджеты",
+      "image": "https://loremflickr.com/800/800/fitness,tracker,band?lock=1012",
+      "description": "Пульсометр, мониторинг сна, уведомления со смартфона"
+    },
+    {
+      "id": 13,
+      "title": "Умная лампа HomeLight E27",
+      "price": 1590,
+      "category": "Умный дом",
+      "image": "https://loremflickr.com/800/800/smart,light,bulb?lock=1013",
+      "description": "RGB-подсветка, голосовое управление, сценарии автоматизации"
+    },
+    {
+      "id": 14,
+      "title": "Кофемашина Barista Compact",
+      "price": 18990,
+      "category": "Кухня",
+      "image": "https://loremflickr.com/800/800/coffee,machine,espresso?lock=1014",
+      "description": "Давление 15 бар, капучинатор, 3 профиля напитков"
+    },
+    {
+      "id": 15,
+      "title": "Ноутбук UltraBook 14",
+      "price": 73990,
+      "category": "Ноутбуки",
+      "image": "https://loremflickr.com/800/800/laptop,notebook,computer?lock=1015",
+      "description": "AMD Ryzen 7, 16 ГБ RAM, SSD 1 ТБ, вес 1.3 кг"
+    }
+  ]
+}
